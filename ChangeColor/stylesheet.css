@@ -7,21 +7,22 @@ body {
 
   width: 500px;
   height: 100px;
-    
+
+  
+  display:flex;
   margin: auto;
-  display: flex;
   justify-content: center;
 }
 
 div {
-  text-align: center;
+  text-align:center;
   width:90px;
   height: 80px;
 }
 
 h1 {
 
-  position:relative;
+  position:static;
   
   font-size: 40px;
   color: #3a3d58; 
@@ -55,12 +56,11 @@ h1 {
   transition: box-shadow .15s,transform .15s;
 
 
-  font-family: "JetBrains Mono",monospace;
   font-size: 15px;
   display: flex;
 
   
-}*/
+}
 
 #random:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
@@ -74,6 +74,11 @@ h1 {
 #random:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+* {
+  font-family: "JetBrains Mono",monospace;
+
 }
 
  
