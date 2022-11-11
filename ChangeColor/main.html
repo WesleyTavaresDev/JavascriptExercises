@@ -11,6 +11,24 @@
 <body>
 
   <h1>Random Colors</h1>
+<!--hue – Controls the hue of the generated color. 
+  You can pass a string representing a color name: red, orange, 
+  yellow, green, blue, purple, pink and monochrome-->
+
+  <label for="colors">Color</label>
+
+  <select class = "colors">
+    <option value="red">Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+    <option value="pink">Pink</option>
+    <option value="monochrome">Monochrome</option>
+  </select>
+
+  Luminosity: <input type="range" min="0" max="10" step="5" id="value">
 
   <section class= "boxes">
     <div id = "div-left" style="background-color:rgb(215 2 112)"> </div>
