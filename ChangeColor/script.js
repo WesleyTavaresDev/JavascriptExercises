@@ -3,7 +3,22 @@ var randomColor = require('randomcolor');
 
 
 function setColor() {
-  let colors = randomColor({count: 3})
+  const hue = document.querySelector(".colors");
+  const lumi = document.getElementById('value');
+
+  let luminosityValue = () => {
+    switch (lumi.value) {
+      case  "0":
+        return 'dark';
+      case "5":
+        return 'bright'
+      case  "10":
+        return 'light'
+    }
+  }
+
+  let colors = randomColor({hue: hue.value, luminosity: luminosityValue(),count: 3})
+
   const divLeft = document.getElementById('div-left')
   divLeft.style.backgroundColor = colors[0];
 
