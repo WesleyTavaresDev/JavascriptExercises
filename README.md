@@ -1,1 +1,1 @@
-# JavascriptExercises
+# Random Color
