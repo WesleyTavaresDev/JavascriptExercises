@@ -5,18 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Change Color</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheet.css" media="screen">
+
 </head>
 <body>
 
-  <p>Células</p>
+  <h1>Random Colors</h1>
 
-  <div class= "boxes">
-    <div id = "div-left"> po</div>
-    <div id = "div-right"> pe</div>
-    <div id = "div-center"> pa</div>
-  </div>
-  <button type="button" id="random" onclick="setColor()">Random Color</button>
+  <section class= "boxes">
+    <div id = "div-left" style="background-color:rgb(215 2 112)"> </div>
+    <div id = "div-right" style="background-color: rgb(115 79 150)"> </div>
+    <div id = "div-center" style="background-color: rgb(0 56 168)"></div>
+  </section>
+
+  <button type="button" id="random" onclick="setColor()">Generate</button>
 
   <script src="script.js"></script>
 
