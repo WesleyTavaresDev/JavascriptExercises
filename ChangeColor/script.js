@@ -8,12 +8,12 @@ function setColor() {
   const hue = document.querySelector(".colors");
   let colors = randomColor({hue: hue.value, luminosity: getLuminosityValue() ,count: boxes.length})
 
+  document.getElementById('finalcolors').innerText = (`Colors: [${colors}]`);
+  
   for(let i in boxes) {
     boxes[i].style.backgroundColor = colors[i];
   }
 
-  const finalColors = document.getElementById('finalcolors');
-  finalColors.innerText = (`Colors: [${colors}]`);
 }
 
 function getLuminosityValue() {
