@@ -8,7 +8,7 @@
   width: 500px;
   height: 100px;
 
-  padding-top: 50px;
+  padding-top: 30px;
   
   display:flex;
   margin: auto;
@@ -91,6 +91,17 @@
   transform: translateY(2px);
 }
 
+#finalcolors {
+
+  margin-top: 15px;
+  text-align: center;
+
+  color: #36395A;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
 #black {
   background-color: #3a3d58;
   border-radius: 0px;
@@ -114,7 +125,6 @@ div {
   margin: 3px;
    
   border-radius: 4px;
-  
 }
 
 h1 {
