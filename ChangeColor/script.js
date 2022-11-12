@@ -21,12 +21,7 @@ function setColor() {
 
 
 function luminosityValue() {
-  switch (document.getElementById('value').value) {
-    case  "0":
-      return 'dark';
-    case "5":
-      return 'bright'
-    case  "10":
-      return 'light'
-  }
+  const luminosity = document.getElementById('value').value;
+  return luminosity === "0" ? 'dark' : luminosity === "5" ? 'bright' : 'light';
+
 }
