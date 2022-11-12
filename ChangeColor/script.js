@@ -1,23 +1,10 @@
 var randomColor = require('randomcolor');
 
-
-
+  
 function setColor() {
   const hue = document.querySelector(".colors");
-  const lumi = document.getElementById('value');
 
-  let luminosityValue = () => {
-    switch (lumi.value) {
-      case  "0":
-        return 'dark';
-      case "5":
-        return 'bright'
-      case  "10":
-        return 'light'
-    }
-  }
-
-  let colors = randomColor({hue: hue.value, luminosity: luminosityValue(),count: 3})
+  let colors = randomColor({hue: hue.value, luminosity: luminosityValue() ,count: 3})
   
   const divLeft = document.getElementById('div-left')
   divLeft.style.backgroundColor = colors[0];
@@ -30,4 +17,16 @@ function setColor() {
 
   const finalColors = document.getElementById('finalcolors');
   finalColors.innerText = (`Colors: [${colors}]`);
+}
+
+
+function luminosityValue() {
+  switch (document.getElementById('value').value) {
+    case  "0":
+      return 'dark';
+    case "5":
+      return 'bright'
+    case  "10":
+      return 'light'
+  }
 }
