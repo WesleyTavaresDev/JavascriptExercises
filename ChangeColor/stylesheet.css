@@ -1,8 +1,14 @@
+* {
+  font-family: "JetBrains Mono",monospace;
+  padding: 0px;
+  margin: 0px;
+}
 .boxes {
 
   width: 500px;
   height: 100px;
 
+  padding-top: 50px;
   
   display:flex;
   margin: auto;
@@ -32,7 +38,6 @@
   justify-content: center;
 }
 
-
 #coloroptions {
 
   width: auto;
@@ -41,6 +46,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: transparent;
 }
 
  #random {
@@ -84,13 +91,19 @@
   transform: translateY(2px);
 }
 
-* {
-  font-family: "JetBrains Mono",monospace;
+#black {
+  background-color: #3a3d58;
+  border-radius: 0px;
 
+  width: auto;
+  height: 50px;
+  margin: 0;
+  vertical-align: top;
 }
 
+
+
 body {
-  padding-top: 100px;
   background-color: rgb(248, 245, 252);
 }
 
@@ -98,12 +111,17 @@ div {
   text-align:center;
   width:90px;
   height: 80px;
+  margin: 3px;
+   
+  border-radius: 4px;
+  
 }
 
 h1 {
 
   position:static;
-  
+  padding-top: 80px;
+
   font-size: 40px;
   color: #3a3d58; 
   text-align: center;
